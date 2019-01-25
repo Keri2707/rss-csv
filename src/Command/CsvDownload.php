@@ -42,7 +42,7 @@ class CsvDownload implements CsvDownloadInterface
 
                 $content = array($title, $pureContent, $link, $pubDate, 'anonym');
 
-                fputcsv($fp, $content, ',', ' ');
+                fputcsv($fp, $content);
             }
 
             fclose($fp);
